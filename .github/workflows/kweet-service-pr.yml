@@ -42,11 +42,3 @@ jobs:
         END_POINT: '${{secrets.END_POINT}}'
         TENANT_ID: '${{secrets.TENANT_ID}}'
       run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=oererenn_kwetter --file kweet-service/pom.xml
-      
-#     - name: Build with Maven
-#       env: 
-#           CLIENT_ID: '${{secrets.CLIENT_ID}}'
-#           CLIENT_SECRET: '${{secrets.CLIENT_SECRET}}'
-#           END_POINT: '${{secrets.END_POINT}}'
-#           TENANT_ID: '${{secrets.TENANT_ID}}'
-#       run: mvn -B package --file kweet-service/pom.xml
