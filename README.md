@@ -4,7 +4,7 @@ A personal project to improve my knowledge in microservices, design patterns, an
 
 ## Description
 
-I created a microblogging and social networking service on which users post and interact with messages. It is going to be similar to Twitter.
+I created a microblogging and social networking service on which users post and interact with messages. It is similar to Twitter.
 
 ## Used Tools and Technologies
 - **Project Management Tool:** [Jira](https://www.atlassian.com/software/jira)
