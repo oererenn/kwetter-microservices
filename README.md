@@ -27,7 +27,7 @@ I created a microblogging and social networking service on which users post and 
 <img src="https://user-images.githubusercontent.com/61336307/192782333-b971c062-527a-4723-885c-f92de31e286a.jpeg" width="700" height="550">
 
 ## CI/CD
-<img src="https://user-images.githubusercontent.com/61336307/192782040-fbd58ab3-dca3-423a-bd76-e3ff84945895.jpeg" width="900" height="400">
+<img src="https://user-images.githubusercontent.com/61336307/192782040-fbd58ab3-dca3-423a-bd76-e3ff84945895.jpeg" width="900" height="375">
 
 
 
