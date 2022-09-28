@@ -10,7 +10,7 @@ I created a microblogging and social networking service on which users post and 
 - **Project Management Tool:** [Jira](https://www.atlassian.com/software/jira)
 - **CI/CD:** [Github Actions](https://github.com/features/actions) + [ArgoCD](https://argo-cd.readthedocs.io/en/stable/)
 - **Kubernetes Cluster:** [Google Kubernetes Engine](https://cloud.google.com/kubernetes-engine)
-- **Security Audis and Quality Assurance Tools:** [GitGuardian](https://www.gitguardian.com/), [Synk](https://snyk.io/) and [SonarCloud](https://sonarcloud.io/projects)
+- **Security Audits and Quality Assurance Tools:** [GitGuardian](https://www.gitguardian.com/), [Synk](https://snyk.io/) and [SonarCloud](https://sonarcloud.io/projects)
 - **Identity Provider (SaaS):** [Auth0](https://auth0.com)
 - **Secrets and Configs:** [Azure KeyVault](https://azure.microsoft.com/en-us/products/key-vault/)
 - **Asynchronous communication:** [Apache Kafka (Confluent Cloud)](https://www.confluent.io/confluent-cloud/)
@@ -18,6 +18,7 @@ I created a microblogging and social networking service on which users post and 
 - **Api Gateway:** [Kong](https://konghq.com/)
 - **Database Service:** [Azure CosmosDB](https://azure.microsoft.com/en-us/products/cosmos-db/)
 - **Client (Front-end):** [Next.js](https://nextjs.org/)
+- **Analytics and Monitoring:** [Grafana](https://grafana.com/) and [Prometheus](https://prometheus.io/docs/introduction/overview/)
 
 ## High Level Design
 
