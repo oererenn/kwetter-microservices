@@ -19,6 +19,8 @@ I created a microblogging and social networking service on which users post and 
 - **Database Service:** [Azure CosmosDB](https://azure.microsoft.com/en-us/products/cosmos-db/)
 - **Client (Front-end):** [Next.js](https://nextjs.org/)
 - **Analytics and Monitoring:** [Grafana](https://grafana.com/) and [Prometheus](https://prometheus.io/docs/introduction/overview/)
+- **Performance Monitoring**: [K6 Cloud](https://k6.io/cloud/)
+- **Kubernetes Configuration Management**: [Kustomize](https://kustomize.io/)
 
 ## High Level Design
 
