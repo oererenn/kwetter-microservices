@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: timeline-service-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: timeline-service
+    spec:
+      containers:
+        - name: timeline-service
+          image: timeline-service
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+          resources:
+            limits:
+              cpu: 500m
+            requests:
+              cpu: 300m
+          env:
+            - name: CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: azure-secret
+                  key: client-id
+            - name: CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: azure-secret
+                  key: client-secret
+            - name: TENANT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: azure-secret
+                  key: tenant-id
+            - name: END_POINT
+              valueFrom:
+                secretKeyRef:
+                  name: azure-secret
+                  key: end-point
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: timeline-service

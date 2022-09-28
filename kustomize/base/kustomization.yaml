@@ -1,0 +1,37 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- kweet-service-deployment.yaml
+- kweet-service-svc.yaml
+- kweet-processing-service-deployment.yaml
+- kweet-processing-service-svc.yaml
+- social-graph-service-deployment.yaml
+- social-graph-service-svc.yaml
+- timeline-service-deployment.yaml
+- timeline-service-svc.yaml
+- user-service-deployment.yaml
+- user-service-svc.yaml
+- kong-promethues.yaml
+- ingress.yaml
+- kong.jwt.yaml
+- consumer-user.yaml
+- hpa.yaml
+- rate-limit.yaml
+- cors.yaml
+namespace: kwetter
+images:
+- name: kweet-processing-service
+  newName: oereren/kweet-processing-service
+  newTag: 2d3d0694fa87640253063b0473596dbdb6a143da
+- name: kweet-service
+  newName: oereren/kweet-service
+  newTag: 7b325d1427b53ea22b6be18af78b96775b8e25a7
+- name: social-graph-service
+  newName: oereren/social-graph-service
+  newTag: 08184973537682df93b2e261174bf9d547e03abe
+- name: timeline-service
+  newName: oereren/timeline-service
+  newTag: 2d3d0694fa87640253063b0473596dbdb6a143da
+- name: user-service
+  newName: oereren/user-service
+  newTag: 2d3d0694fa87640253063b0473596dbdb6a143da

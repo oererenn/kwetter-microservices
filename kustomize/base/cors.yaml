@@ -1,0 +1,31 @@
+apiVersion: configuration.konghq.com/v1
+kind: KongPlugin
+metadata:
+  name: cors
+config:
+  origins:
+    - http://oereren.com
+    - http://localhost:3000
+    - https://oereren.com
+  methods:
+    - GET
+    - POST
+    - DELETE
+    - PUT
+  headers:
+    - Accept
+    - Accept-Version
+    - Content-Length
+    - Access-Control-Allow-Origin
+    - Access-Control-Allow-Headers
+    - Authorization
+    - Content-MD5
+    - Content-Type
+    - Date
+    - X-Auth-Token
+  exposed_headers:
+    - X-Auth-Token
+  credentials: true
+  max_age: 3600
+  preflight_continue: false
+plugin: cors
